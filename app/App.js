@@ -1,7 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom"
+import Template from "./components/Template"
 
 ReactDOM.render(
-  <h1>Hello</h1>,
+  <Template/>,
   document.getElementById('app')
 );
