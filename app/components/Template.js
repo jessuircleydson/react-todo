@@ -1,13 +1,24 @@
 import React from "react";
-import InputTask from "./Input"
+import InputTask, {getNewValue} from "./Input"
 import List from "./List"
 
 export default class Template extends React.Component {
+  constructor() {
+    super();
+
+  }
+  
+  addNewValue(e) {
+    
+  }
 
   render() {
     return(
         <div>
-          <InputTask type="text" placeholder="Do something"/>
+          <form>
+            <InputTask type="text" placeholder="Do something" />
+            <button>Add</button>
+          </form>
           <List/>
         </div>
     );
