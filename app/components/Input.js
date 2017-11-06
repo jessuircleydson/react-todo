@@ -6,10 +6,10 @@ export default class InputTask extends React.Component {
   }
 
   getNewValeu(e) {
-    return e.target.value;
+    this.props.addNew(this.newItem);
   }
  
   render() {
-    return <input type={this.props.type} placeholder={this.props.placeholder}  />
+    return <input ref={input => this.newItem = input} type={this.props.type} placeholder={this.props.placeholder}  />
   }
 }

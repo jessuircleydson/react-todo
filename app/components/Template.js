@@ -3,20 +3,16 @@ import InputTask, {getNewValue} from "./Input"
 import List from "./List"
 
 export default class Template extends React.Component {
-  constructor() {
-    super();
-
-  }
   
   addNewValue(e) {
-    
+    console.log(e)
   }
 
   render() {
     return(
         <div>
           <form>
-            <InputTask type="text" placeholder="Do something" />
+            <InputTask addNew={this.addNewValue.bind(this)} type="text" placeholder="Do something" />
             <button>Add</button>
           </form>
           <List/>
