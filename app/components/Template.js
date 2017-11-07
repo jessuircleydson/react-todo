@@ -10,7 +10,7 @@ export default class Template extends React.Component {
   }
 
   getNewValue(info) {
-   this.setState({list:info});
+   this.setState({list:[...this.state.list, info]});
   }
 
   render() {
